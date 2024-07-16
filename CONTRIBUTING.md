@@ -74,6 +74,6 @@ Please note that this project is released with a Contributor Code of Conduct. By
 
 ## Questions?
 
-If you have any questions or need further clarification, please open an issue or contact the project maintainers.
+If you have any questions or need further clarification, please feel free open an issue or tag the project maintainers.
 
 Thank you for contributing to ThoughtSpot! Your efforts help make our blogging platform even better.
