@@ -17,14 +17,40 @@ ThoughtSpot is a blogging web application built with React.js for the frontend a
    ```
    cd ThoughtSpot
    ```
-4. Install dependencies:
-   ```
-   npm install
-   ```
-5. Start the development server:
-   ```
-   npm run dev
-   ```
+## Local Setup
+
+#### Backend
+
+##### Pre-requisities:
+
+- Create a copy of .env.example and name the file `.env`
+- Set up Postgres DATABASE_URL in .env file. You can get a free PostgreSQL connection string from [Aiven.io](https://aiven.io/).
+- Create a copy of wrangler.sample.toml and name the file `warngler.toml`
+- Set up Prisma connection pool DATABASE_URL in wrangler.toml file. You can get this for free from [Prisma](https://www.prisma.io/data-platform/accelerate).
+- Set up JWT Secret JWT_SECRET in wrangler.toml file. This can be any value.
+
+```bash 
+
+cd backend
+npm install
+npm run prisma:migrate
+npx prisma generate
+npm run dev
+
+```
+
+> Note: wrangler.toml is the environment configuration file for a serverless backend. .env is used by Prisma for connection pooling. Ensure you configure both environment files accordingly.
+
+#### Frontend
+
+- Navigate into the frontend directory using 
+```bash
+
+cd frontend
+npm install
+npm run dev
+
+```
 
 ## Making Changes
 
